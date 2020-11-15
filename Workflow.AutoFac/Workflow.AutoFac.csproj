@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>DevelApp.Workflow.AutoFac</PackageId>
+    <Company>DevelApp Denmark (CVR 33211740)</Company>
+    <Authors>Lars Shakya Buch-Jepsen</Authors>
+    <Copyright>Copyright © DevelApp 2020</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/DevelApp-dk/Workflow.AutoFac</RepositoryUrl>
+    <Description>Setup for AutoFac for DevelApp.Workflow 
+
+DevelApp.Workflow which is an oppinionated Workflow for Akka.Net making it easy to handle workflows</Description>
+    <Product>DevelApp.Workflow.AutoFac</Product>
+    <AssemblyName>DevelApp.Workflow.AutoFac</AssemblyName>
+    <RootNamespace>DevelApp.Workflow.AutoFac</RootNamespace>
+    <Version>1.0.7</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <None Include="..\..\Workflow.Core\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Akka.DI.Autofac" Version="1.4.1" />
+    <PackageReference Include="DevelApp.RuntimePluggableClassFactory" Version="1.0.2" />
+    <PackageReference Include="develapp.workflow" Version="1.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.9" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.AutoFac", "Workflow.AutoFac\Workflow.AutoFac.csproj", "{A4264F53-3184-480A-B1ED-79D7356B56A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4264F53-3184-480A-B1ED-79D7356B56A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4264F53-3184-480A-B1ED-79D7356B56A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4264F53-3184-480A-B1ED-79D7356B56A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4264F53-3184-480A-B1ED-79D7356B56A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A196FD96-9A26-4FA7-8B4A-3896D15B0BFF}
+	EndGlobalSection
+EndGlobal
