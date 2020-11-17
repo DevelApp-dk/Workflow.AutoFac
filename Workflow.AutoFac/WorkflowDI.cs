@@ -93,7 +93,7 @@ namespace Workflow.AutoFac
         /// <param name="app"></param>
         /// <param name="env"></param>
         /// <param name="lifetime"></param>
-        public static void Configure(IApplicationBuilder app, IWebHostEnvironment env, IHostApplicationLifetime lifetime, ContainerBuilder builder)
+        public static void Configure(IApplicationBuilder app, IWebHostEnvironment env, IHostApplicationLifetime lifetime, ContainerBuilder builder, Uri pluginPathUri)
         {
             lifetime.ApplicationStarted.Register(() =>
             {
@@ -103,6 +103,10 @@ namespace Workflow.AutoFac
             {
                 app.ApplicationServices.GetService<ActorSystem>().Terminate().Wait();
             });
+            builder.RegisterType<SagaStepBehaviorFactory>()
+                .As<ISagaStepBehaviorFactory>()
+                .WithParameter(new TypedParameter(typeof(Uri), pluginPathUri))
+                .WithParameter(new TypedParameter(typeof(int), 10));//retainOldVersions
             builder.RegisterType<ConfigurationActor>();
             builder.RegisterType<DataOwnerActor>();
             builder.RegisterType<DataServiceControllerActor>();
