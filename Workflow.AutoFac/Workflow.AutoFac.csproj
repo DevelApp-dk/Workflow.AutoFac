@@ -14,8 +14,9 @@ DevelApp.Workflow which is an oppinionated Workflow for Akka.Net making it easy 
     <Product>DevelApp.Workflow.AutoFac</Product>
     <AssemblyName>DevelApp.Workflow.AutoFac</AssemblyName>
     <RootNamespace>DevelApp.Workflow.AutoFac</RootNamespace>
-    <Version>1.0.7</Version>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.8</Version>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
